@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guilherme Gabrielle 🚀 | Front End</title>
+    <title>Guilherme Gabrielle 🚀</title>
     <link rel="shortcut icon" href="assets/img/letter-g.png">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -19,47 +19,21 @@
 
 
     <header class="header" id class="header">
-        <nav class="nav container">
-            <a href="#" class="nav_logo">Guilherme Gabrielle</a>
 
-            <div class="nav_menu" id="nav-menu">
-                <ul class="nav_list">
-                    <li class="nav_item">
-                        <a href="#home" class="nav_link active-link">
-                            <i class='bx bx-home-alt-2 nav_icon'></i>
-                            <span class="nav_name">Home</span>
-                        </a>
-                    </li>
+        <a href="#" class="nav-logo">Guilherme Gabrielle</a>
 
-                    <li class="nav_item">
-                        <a href="#about" class="nav_link">
-                            <i class='bx bx-user nav_icon'></i>
-                            <span class="nav_name">About</span>
-                        </a>
-                    </li>
+        <div class="bx bx-menu" id="menu--icon"></div>
 
-                    <li class="nav_item">
-                        <a href="#skills" class="nav_link">
-                            <i class='bx bx-book-alt nav_icon'></i>
-                            <span class="nav_name">Skills</span>
-                        </a>
-                    </li>
-
-                    <li class="nav_item">
-                        <a href="#projects" class="nav_link">
-                            <i class='bx bx-folder nav_icon'></i>
-                            <span class="nav_name">Projects</span>
-                        </a>
-                    </li>
+        <ul class="nav-list">
+            <li><a href="#home" class="nav-link active-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
 
 
 
-
-                </ul>
-
-            </div>
-
-        </nav>
     </header>
 
 
@@ -86,7 +60,6 @@
             </li>
 
 
-
             <li class="menu_item">
                 <a href="" class="menu_link">
                     <i class='bx bx-moon menu_icon change-theme' id="theme-button"></i>
@@ -101,52 +74,137 @@
 
     <main class="mainContainer fillHeight">
 
-        <section class="container section section_height" id="home">
-            <div class="home-container container grid">
-                <div class="home-content grid">
+        <section class="section section_height home-section" id="home">
 
-                    <div class="home-data">
-                        <h1 class="home-data-title">Hi, I'am </h1>
-                        <h3 class="home-data-subtitle">Guilherme Gabrielle.</h3>
-                        <h3 class="home-data-subtitle">Front-End Developer.</h3>
-                        <p class="home-data-description">I'm a junior developer focused and specialized in web
-                            applications,
-                            with no professional experience so
-                            far.</p>
-                            
-                        <a href="mailto:guilhermezgabrielle@gmail.com" class="button button-flex">
-                            Contact Me <i class='bx bxl-telegram button-icon'></i>
-                        </a>
-                    </div>
+            <div class="home-data">
+                <h1 class="home-data-title">Hi, I'am </h1>
+                <h2 class="home-data-subtitle">Guilherme Gabrielle</h2>
+                <h3 class="home-data-subtitle big-heading">FrontEnd Developer.</h3>
+                <p class="home-data-description">I'm a junior developer focused and specialized in web
+                    applications,
+                    with no professional experience so
+                    far.</p>
 
-                    <div class="home-img">
-                        <img class="home-blob-img light-theme" src="assets/img/perfil.jpg" alt="">
-                    </div>
-
-                </div>
+                <a href="#contact" class="button button-flex">
+                    Contact Me <i class='bx bxl-telegram button-icon'></i>
+                </a>
             </div>
 
         </section>
 
 
         <section class="container section section_height" id="about">
-            <h2 class="section_title">About Me</h2>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-me">
+                <div class="box-img">
+                    <img src="assets/img/perfil.jpg" class="img-profile">
+                </div>
+
+
+                <div class="about-data">
+                    <p class="desc">Hi, my name is Guilherme, I'm 20 years old. I started studying programming in 2021,
+                        I am currently graduating my last year of Analysis and
+                        Systems Development.
+                    </p>
+                    <p class="desc">
+                        Initially I'm a FrontEnd developer, but in the future I want to become a
+                        FullStack developer. To advance my knowledge, I took a course on Udemy, WEB development.
+                    </p>
+                    <p class="desc">
+                        I am a calm developer, organized and focused on my goals and objectives, always looking to
+                        improve
+                        my knowledge.
+                    </p>
+
         </section>
 
 
+        <section class="container section section_height qualification">
+            <h2 class="section-title">Qualification</h2>
+            <div class="qualification-container">
+                <div class="qualification-tabs">
+                    <div class="qualification-button button-flex qualification-active" data-target="#education">
+                        <i class='bx bxs-graduation qualification-icon'></i>
+                        Formation
+                    </div>
+                    <div class="qualification-button button-flex" data-target="#work">
+                        <i class='bx bx-briefcase qualification-icon'></i>
+                        Work
+                    </div>
+                </div>
+
+                <div class="qualification-sections">
+                    <div class="qualification-active" data-content="" id="education">
+                        <ul class="timeline">
+                            <li>
+                                <div class="direction-r">
+                                    <div class="flag-wrapper">
+                                        <span class="hexa"></span>
+                                        <span class="flag with-tooltip" data-tooltip="This is a tooltip">UDEMY</span>
+                                        <span class="time-wrapper"> <span class="time">Sept - 2022 </span></span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="direction-l">
+                                    <div class="flag-wrapper">
+                                        <span class="hexa"></span>
+                                        <span class="flag with-tooltip" data-tooltip="This is a tooltip">UNINTER -
+                                            ADS</span>
+                                        <span class="time-wrapper"><span class="time">July 2022 - </span></span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="direction-r">
+                                    <div class="flag-wrapper">
+                                        <span class="hexa"></span>
+                                        <span class="flag with-tooltip" data-tooltip="This is a tooltip">UCS - ADS
+                                        </span>
+                                        <span class="time-wrapper"><span class="time">Feb 2021 - July 2022</span></span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <div data-content="" id="work">
+                    <ul class="timeline">
+                        <li>
+                            <div class="direction-r">
+                                <div class="flag-wrapper">
+                                    <span class="hexa"></span>
+                                    <span class="flag">Looking for...</span>
+                                    <span class="time-wrapper"> <span class="time">Jan 2023 - </span></span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+        </section>
+
         <section class="container section section_height" id="skills">
-            <h2 class="section_title">Skills & Experience</h2>
+            <h2 class="section-title">Skills & Experience</h2>
 
             <div class="skills_container container grid">
                 <div class="skills_content">
                     <h3 class="skills_title">
-                        <i class="ri-braces-fill"></i> Front-End Developer
+                        <i class="ri-braces-fill"></i> FrontEnd Developer
                     </h3>
 
                     <div class="skills_info">
                         <div class="skills_data">
                             <div class="skills_circle">
-                                <img src="assets/img/html5.svg" alt="skills img">
+                                <img src="assets/img/html5.svg " class="skills-icon">
                             </div>
 
                             <h3 class="skills_name">HTML</h3>
@@ -155,7 +213,7 @@
 
                         <div class="skills_data">
                             <div class="skills_circle">
-                                <img src="assets/img/css3.svg" alt="skills img">
+                                <img src="assets/img/css3.svg" class="skills-icon">
                             </div>
 
                             <h3 class="skills_name">CSS</h3>
@@ -164,7 +222,7 @@
 
                         <div class="skills_data">
                             <div class="skills_circle">
-                                <img src="assets/img/javascript.svg" alt="skills img">
+                                <img src="assets/img/javascript.svg" class="skills-icon">
                             </div>
 
                             <h3 class="skills_name">JavaScript</h3>
@@ -173,7 +231,7 @@
 
                         <div class="skills_data">
                             <div class="skills_circle">
-                                <img src="assets/img/react.svg" alt="skills img">
+                                <img src="assets/img/react.svg" class="skills-icon">
                             </div>
 
                             <h3 class="skills_name">React</h3>
@@ -182,7 +240,7 @@
 
                         <div class="skills_data">
                             <div class="skills_circle">
-                                <img src="assets/img/git.svg" alt="skills img">
+                                <img src="assets/img/git.svg" class="skills-icon">
                             </div>
 
                             <h3 class="skills_name">Git</h3>
@@ -198,10 +256,10 @@
                     <h3 class="skills_title"> <i class='bx bxs-server'></i>
                         BackEnd Developer</h3>
 
-                    <div class="skills_info">
+                    <div class="skills_info skills-back">
                         <div class="skills_data">
                             <div class="skills_circle">
-                                <img src="assets/img/mysql.svg" alt="skills img">
+                                <img src="assets/img/mysql.svg" class="skills-icon">
                             </div>
 
                             <h3 class="skills_name">MySQL</h3>
@@ -210,12 +268,14 @@
 
                         <div class="skills_data">
                             <div class="skills_circle">
-                                <img src="assets/img/java.svg" alt="skills img">
+                                <img src="assets/img/java.svg" class="skills-icon">
                             </div>
 
                             <h3 class="skills_name">Java</h3>
 
                         </div>
+
+
 
                     </div>
 
@@ -229,16 +289,157 @@
         </section>
 
 
+
         <section class="container section section_height" id="projects">
-            <h2 class="section_title">Projects</h2>
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-main">
+                <div class="projects-container">
+                    <div class="card">
+                        <img src="assets/img/portfolio.JPG">
+                    </div>
+
+                    <div class="projects-desc">
+                        <h2>Title Project</h2>
+                        <p> Description project</p>
+                    </div>
+
+                    <div class="projects-links">
+                        <a href="">
+                            <i class='bx bxl-github projects-icon'></i> GitHub
+                        </a>
+                        <a href="">
+                            <i class="ri-attachment-2 projects-icon"></i> Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projects-container">
+                    <div class="card">
+                        <img src="assets/img/portfolio.JPG">
+                    </div>
+
+                    <div class="projects-desc">
+                        <h2>Title Project</h2>
+                        <p> Description project</p>
+                    </div>
+
+                    <div class="projects-links">
+                        <a href="">
+                            <i class='bx bxl-github projects-icon'></i> GitHub
+                        </a>
+                        <a href="">
+                            <i class="ri-attachment-2 projects-icon"></i> Demo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projects-container">
+                    <div class="card">
+                        <img src="assets/img/portfolio.JPG">
+                    </div>
+
+                    <div class="projects-desc">
+                        <h2>Title Project</h2>
+                        <p> Description project</p>
+                    </div>
+
+                    <div class="projects-links">
+                        <a href="">
+                            <i class='bx bxl-github projects-icon'></i> GitHub
+                        </a>
+                        <a href="">
+                            <i class="ri-attachment-2 projects-icon"></i> Demo
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
         </section>
 
 
+        <section class="container section section_height" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact-form">
+
+                <form id="contact-form" autocomplete="off">
+
+                    <input type="text" name="name" id="contact-name" placeholder="Name *" required>
+                    <input type="text" name="email" id="contact-email" placeholder="Email *"
+                        pattern="[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[A-Z]{2}|com|org|net|gov|mil|biz|info|mobi|name|aero|jobs|museum)\b"
+                        title="Digite um e-mail válido" required>
+
+                    <input type="text" name="message" id="contact-message" placeholder="Message" required>
+                    <button type="submit" id="button" class="contact-button">Send</button>
+
+
+
+
+                </form>
+
+
+            </div>
+
+
+        </section>
 
     </main>
 
 
+    <footer class="footer-social">
+
+        <div class="bottom-margin">
+            <div class="footer-menu">
+                <ul class="footer-menu-list">
+                    <li>
+                        <a href="https://github.com/guizgabrielle">
+                            <i class='bx bxl-github menu_icon'></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/guizgabrielle/">
+                            <i class='bx bxl-instagram menu_icon'></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/guilhermezgabrielle/">
+                            <i class='bx bxl-linkedin menu_icon'></i>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="">
+                            <i class='bx bx-moon menu_icon change-theme' id="theme-button"></i>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+
+
+
+
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('TlYZAL7OJV4LgdDQ0')
+    </script>
+
+    <script src="assets/js/contact.js"></script>
     <script src="assets/js/main.js"> </script>
+
+
 
 </body>
 
