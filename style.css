@@ -4,17 +4,18 @@
     --header-height: 3rem;
     --body-font: 'Open Sans', sans-serif;
     --font-size: .938rem;
-    --background-color: #1d1d1f;
+    --background-color: rgb(25, 25, 25);
     --container-color: var(--background-color);
-    --bg-content: #2a2a2a;
+    --bg-content: rgb(35, 35, 35);
     --font-content: rgba(255, 255, 255, 0.863);
-    --color-circle: aliceblue;
+    --color-circle: rgb(248, 248, 248);
     --second-color: rgb(144, 255, 144);
-    --third-color: rgba(255, 255, 255, 0.815);
-    --p-color: rgba(255, 255, 255, 0.425);
+    --third-color: rgb(255, 255, 255);
+    --p-color: rgba(255, 255, 255, 0.753);
     --bg-nav-menu: rgb(54, 54, 54);
     --box-shadow: black;
-    
+    --shadow-blob: white;
+
 }
 
 @media screen and (min-width: 968px) {
@@ -36,10 +37,13 @@
     padding: 0px 150px;
 }
 
+
+
+
 body {
     background-color: var(--background-color);
     margin: 0px;
-    font-size: .938rem;
+    font-size: 1rem;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -145,14 +149,14 @@ body {
 
 /* DARK E LIGHT THEME ------------------------------------------- */
 
- .change-theme {
+.change-theme {
     color: var(--color-circle);
     cursor: pointer;
     transition: color .3s;
- }
+}
 
- body.light-theme {
-    --background-color: rgb(255, 255, 255);
+body.light-theme {
+    --background-color: rgb(254, 251, 252);
     --container-color: var(--background-color);
     --bg-content: #3a3a3a;
     --font-content: rgba(255, 255, 255, 0.863);
@@ -161,9 +165,13 @@ body {
     --third-color: rgba(31, 31, 31, 0.815);
     --p-color: rgba(0, 0, 0, 0.788);
     --bg-nav-menu: rgb(233 229 229);
- }
+    --shadow-blob: black;
+    
+    
+}
 
- 
+
+
 /* HOME ------------------------------------------------------ */
 
 #home {
@@ -178,30 +186,74 @@ body {
     padding: 0px;
 }
 
-#home h1 {
-    margin: 0px 0px 35px 0px;
-    font-weight: 400;
-    font-size: clamp(14px, 5vw, 30px);
-    color: var(--second-color);
-
-
+.home-blob-img {
+    width: 300px;
+    border-radius: 150px;
+    box-shadow: 0 -1px 12px var(--shadow-blob);
 }
 
-.text-home {
-    margin: 0px;
-    font-size: clamp(40px, 8vw, 65px);
+.home-container {
+    gap: 1rem;
+}
+
+.home-container .home-content {
+    grid-template-columns: .5fr 3fr;
+    padding-top: 1.5rem;
+    align-items: center;
+}
+
+
+
+
+.home-container .home-content {
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+    
+}
+
+
+.home-data-title {
+    font-size: 2rem;
+    color: var(--second-color);
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0px 0px 35px 0px;
+}
+
+.home-data-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
     color: var(--third-color);
     line-height: 1.5;
-
-
 }
 
-#home p {
-    margin: 20px 0px 0px;
-    max-width: 540px;
+.home-data-description {
+    margin-bottom: 2rem;
     color: var(--p-color);
+    max-width: 420px;
+    margin: 20px 0px 2rem;
 }
 
+.button-flex {
+    display: inline-flex;
+    align-items: center;
+  }
+
+.button {
+    background-color: rgb(0, 204, 255);
+    color: rgb(31, 31, 31);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+}
+
+.button-icon {
+    font-size: 1.25rem;
+    margin-left: 0.5rem;
+    transition: 0.3s;
+}
+ 
 /* menu lateral ------------------------------------------- */
 
 .menu-left {
@@ -418,8 +470,8 @@ html {
 @media (max-width:280px) {
 
     .skills_circle {
-            width: 60px;
-            height: 60px;
+        width: 60px;
+        height: 60px;
     }
 
 }
@@ -458,6 +510,22 @@ html {
         justify-content: center;
         column-gap: 3rem;
     }
+
+    .home-content {
+        grid-template-columns: max-content 1fr 1fr !important;
+    }
+
+    .home-content .home-data {
+        grid-column: initial !important;
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+
+    .home-content .home-img {
+        order: 1;
+        justify-self: center;
+    }
+
 }
 
 @media screen and (max-width: 320px) {
@@ -492,7 +560,7 @@ html {
 
 .nav_name {
     font-size: .625rem;
-    
+
 }
 
 .nav_icon {
@@ -546,11 +614,3 @@ html {
 
 
 }
-
-
-
-
-
-
-
-
