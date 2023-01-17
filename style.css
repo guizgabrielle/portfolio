@@ -247,22 +247,7 @@ textarea::placeholder,
     background: #00c2f3cc;
 }
 
-#message-success {
-    background: var(--bg-content);
-    border-radius: 3px;
-    padding: 3rem;
-    width: 650px;
-    margin-top: 2rem;
-    margin-inline: auto;
-    display: none;
-}
 
-
-#message-success {
-    color: #ffffff;
-    text-align: center;
-
-}
 
 /* SKILLS ------------------------------------------- */
 .skills_container {
@@ -368,7 +353,7 @@ textarea::placeholder,
     object-fit: cover;
     border-radius: 4px;
     overflow: hidden;
-    background: #00c4f3;
+    /*background: #00c4f3;  */
 
 }
 
@@ -488,11 +473,23 @@ textarea::placeholder,
 .button-icon {
     font-size: 1.25rem;
     margin-left: 0.5rem;
-    transition: 0.3s;
 }
 
 /* About Me ================================================= */
 
+.button-resume {
+    padding: 1rem;
+    color: #000000;
+    background-color:#818085;
+    margin-top: -30px;
+    margin-left: -10px;
+    border-radius: 0.5rem;
+}
+
+.about-resume {
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+}
 
 
 .box-img {
@@ -503,7 +500,6 @@ textarea::placeholder,
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: black;
 }
 
 .img-profile {
@@ -517,7 +513,7 @@ textarea::placeholder,
     position: absolute;
     width: 500px;
     height: 500px;
-    background-image: conic-gradient(transparent, transparent, transparent, #0ec7ff);
+    background-image: conic-gradient(transparent, transparent, transparent, #620eff);
     animation: animate 4s linear infinite;
     animation-delay: -2s;
 
@@ -528,7 +524,7 @@ textarea::placeholder,
     position: absolute;
     width: 500px;
     height: 500px;
-    background-image: conic-gradient(transparent, transparent, transparent, #8400ff);
+    background-image: conic-gradient(transparent, transparent, transparent, #00b7ff);
     animation: animate 4s linear infinite;
 
 }
@@ -1253,8 +1249,8 @@ textarea::placeholder,
 @media screen and (max-width: 350px) {
 
     .container {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
