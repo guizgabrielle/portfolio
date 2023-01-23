@@ -198,6 +198,11 @@ header.shadow {
 }
 
 /* Contact =========================================================== */
+
+.contact-button:hover {
+    filter: brightness(70%);
+}
+
 .contact-form {
     place-items: center;
     display: grid;
@@ -218,7 +223,7 @@ textarea {
     resize: none;
     color: var(--third-color);
     margin-bottom: 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid var(--lightest-grey);
     font-size: 16px;
     font-family: var(--p-font);
 }
@@ -250,7 +255,7 @@ textarea::placeholder,
 
 
 /* SKILLS ------------------------------------------- */
-.skills_container {
+.skills-container {
     padding-top: 1rem;
     row-gap: 3.5rem;
     grid-template-columns: repeat(2, 350px);
@@ -258,7 +263,7 @@ textarea::placeholder,
 }
 
 
-.skills_content {
+.skills-content {
     background-color: var(--bg-content);
     color: var(--font-content);
     padding: 1.5rem;
@@ -266,7 +271,7 @@ textarea::placeholder,
 
 }
 
-.skills_title {
+.skills-title {
     text-align: center;
     margin-bottom: 1.5rem;
     display: flex;
@@ -277,28 +282,28 @@ textarea::placeholder,
     margin-bottom: 2.5rem;
 }
 
-.skills_title i {
+.skills-title i {
     font-size: 20px;
     font-weight: initial;
 }
 
-.skills_info,
-.skills_data,
-.skills_circle {
+.skills-info,
+.skills-data,
+.skills-circle {
     display: grid;
 }
 
-.skills_info {
+.skills-info {
     grid-template-columns: repeat(3, 1fr);
     gap: 2.5rem 2rem;
 }
 
-.skills_data {
+.skills-data {
     justify-content: center;
     text-align: center;
 }
 
-.skills_circle {
+.skills-circle {
     width: 80px;
     height: 80px;
     background-color: rgb(40, 40, 40);
@@ -307,11 +312,11 @@ textarea::placeholder,
     margin-bottom: 1rem;
 }
 
-.skills_circle img {
+.skills-circle img {
     width: 50px;
 }
 
-.skills_name {
+.skills-name {
     font-size: 16px;
     margin-bottom: .25rem;
 
@@ -470,12 +475,21 @@ textarea::placeholder,
     margin-top: 40px;
 }
 
+.button:hover {
+    filter: brightness(70%);
+}
+
 .button-icon {
     font-size: 1.25rem;
     margin-left: 0.5rem;
 }
 
 /* About Me ================================================= */
+
+
+.img-profile:hover {
+    filter:grayscale(100%)
+}
 
 .button-resume {
     padding: 1rem;
@@ -513,7 +527,7 @@ textarea::placeholder,
     position: absolute;
     width: 500px;
     height: 500px;
-    background-image: conic-gradient(transparent, transparent, transparent, #620eff);
+    background-image: conic-gradient(transparent, transparent, transparent, var(--second-color));
     animation: animate 4s linear infinite;
     animation-delay: -2s;
 
@@ -524,7 +538,7 @@ textarea::placeholder,
     position: absolute;
     width: 500px;
     height: 500px;
-    background-image: conic-gradient(transparent, transparent, transparent, #00b7ff);
+    background-image: conic-gradient(transparent, transparent, transparent, var(--third-color));
     animation: animate 4s linear infinite;
 
 }
@@ -928,7 +942,7 @@ textarea::placeholder,
     padding: 10px;
 }
 
-.menu_item a {
+.menu-item a {
     display: inline-block;
     text-decoration: none;
     text-decoration-skip-ink: auto;
@@ -936,7 +950,7 @@ textarea::placeholder,
     position: relative;
 }
 
-.menu_icon {
+.menu-icon {
     font-size: 20px;
     color: var(--color-circle);
 
@@ -957,7 +971,7 @@ textarea::placeholder,
     margin-bottom: 15px;
 }
 
-.menu_icon:hover {
+.menu-icon:hover {
     color: var(--second-color)
 }
 
@@ -1011,13 +1025,13 @@ textarea::placeholder,
 
     .menu-left {
         left: auto;
-        right: 20px;
+        right: 15px;
     }
 }
 
 @media (max-width:900px) {
 
-    .skills_container {
+    .skills-container {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -1103,11 +1117,11 @@ textarea::placeholder,
 
 @media (max-width:680px) {
 
-    .skills_container {
+    .skills-container {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .skills_info {
+    .skills-info {
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -1130,11 +1144,11 @@ textarea::placeholder,
         font-size: 14px;
     }
 
-    .skills_container {
+    .skills-container {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .skills_info {
+    .skills-info {
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -1176,11 +1190,11 @@ textarea::placeholder,
         font-size: 14px;
     }
 
-    .skills_container {
+    .skills-container {
         grid-template-columns: repeat(1, 350px)
     }
 
-    .skills_info {
+    .skills-info {
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -1195,11 +1209,11 @@ textarea::placeholder,
 
 @media (max-width:360px) {
 
-    .skills_container {
+    .skills-container {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .skills_info {
+    .skills-info {
         grid-template-columns: repeat(2, 1fr);
 
     }
