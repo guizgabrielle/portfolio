@@ -411,6 +411,7 @@ textarea::placeholder,
     color: #938f9f;
     font-weight: 400;
     font-size: 0.9rem;
+    text-align: justify;
 }
 
 
