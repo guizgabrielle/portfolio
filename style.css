@@ -1126,6 +1126,11 @@ textarea::placeholder,
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .contact-form form {
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+    }
 
 }
 
@@ -1167,6 +1172,12 @@ textarea::placeholder,
 
     .img-profile {
         max-width: 95%;
+    }
+
+    .contact-form form {
+        flex-direction: column;
+        width: 100%;
+        display: flex;
     }
 
 }
