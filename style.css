@@ -1174,7 +1174,6 @@ textarea::placeholder,
         max-width: 95%;
     }
 
-
 }
 
 @media (max-width: 480px) {
@@ -1208,7 +1207,7 @@ textarea::placeholder,
 
     .contact-form form {
         flex-direction: column;
-        width: 350px;
+        width: 90%;
         display: flex;
     }
 
