@@ -392,6 +392,10 @@ textarea::placeholder,
 
 }
 
+.projects-links a:hover {
+    filter: brightness(70%);
+}
+
 .projects-icon {
     font-size: 20px;
     color: #3a3a3a;
@@ -466,6 +470,11 @@ textarea::placeholder,
     display: inline-flex;
     align-items: center;
 }
+
+.button-resume:hover {
+    filter: brightness(70%);
+}
+
 
 .button {
     background-color: rgb(0, 204, 255);
