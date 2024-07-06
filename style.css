@@ -497,9 +497,6 @@ textarea::placeholder,
 /* About Me ================================================= */
 
 
-.img-profile:hover {
-    filter:grayscale(100%)
-}
 
 .button-resume {
     padding: 1rem;
@@ -532,38 +529,9 @@ textarea::placeholder,
 
 }
 
-.box-img::after {
-    content: " ";
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    background-image: conic-gradient(transparent, transparent, transparent, var(--second-color));
-    animation: animate 4s linear infinite;
-    animation-delay: -2s;
 
-}
 
-.box-img::before {
-    content: " ";
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    background-image: conic-gradient(transparent, transparent, transparent, var(--third-color));
-    animation: animate 4s linear infinite;
 
-}
-
-@keyframes animate {
-
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-
-}
 
 .box-img .img-profile {
     position: absolute;
